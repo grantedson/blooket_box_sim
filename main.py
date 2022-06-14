@@ -5,18 +5,18 @@ from turtle import hideturtle
 
 
 
-which_box = input("what box would you like to open; wonderland, medieval, breakfast, space, bot, safari, aquatic, dino,spooky, blizzard, spring, lovely, lucky ")
-how_many = int(input("how many boxes would you like to open "))
-how_long_between_boxes = float(input("how long would you like btween boxes, i.e. 1 would be 1 second, can not go below 0.1 "))
-which_box = which_box.lower()
+which_box = input("what box would you like to open; wonderland, medieval, breakfast, space, bot, safari, aquatic, dino,spooky, blizzard, spring, lovely, lucky ") #asks what box
+how_many = int(input("how many boxes would you like to open ")) #asks how many boxes to open
+how_long_between_boxes = float(input("how long would you like btween boxes, i.e. 1 would be 1 second, can not go below 0.1 ")) #how long between boxes
+which_box = which_box.lower() #turns uppercase to lowwercase
 
-if which_box == "wonderland":
-        for _ in range(how_many):
-            character = ["Two of spades", "Eat Me", "Drink Me", "Alice", "Queen of Hearts", "Dormouse", "White Rabbit", "Cheshire Cat", "Caterpillar", "Mad Hatter", "King of Hearts"]
+if which_box == "wonderland": #which box you chose
+        for _ in range(how_many): #loops how many boxes you chose
+            character = ["Two of spades", "Eat Me", "Drink Me", "Alice", "Queen of Hearts", "Dormouse", "White Rabbit", "Cheshire Cat", "Caterpillar", "Mad Hatter", "King of Hearts"] #the different items you can get
             character = choice(
-                character, 1, p=[0.152, 0.15, 0.15, 0.15, 0.15, 0.065, 0.065, 0.065, 0.025, 0.025, 0.003])
-            print(character)
-            sleep(how_long_between_boxes)
+                character, 1, p=[0.152, 0.15, 0.15, 0.15, 0.15, 0.065, 0.065, 0.065, 0.025, 0.025, 0.003]) #how likely something is, 1 = 100% and 0.5 = 50%
+            print(character) #prints what character whats chosen
+            sleep(how_long_between_boxes) #waits the time you chose between boxes before repeating itself
 
 
 if which_box == "medieval":
