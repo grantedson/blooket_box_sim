@@ -5,7 +5,7 @@ from turtle import hideturtle
 
 
 
-which_box = input("what box would you like to open; wonderland, medieval, breakfast, space, bot, safari, aquatic, dino,spooky, blizzard, spring, lovely, lucky ")#asks what box
+which_box = input("what box would you like to open; wonderland, medieval, breakfast, space, bot, safari, aquatic, dino, spooky, blizzard, spring, lovely, lucky ")#asks what box
 how_many = int(input("how many boxes would you like to open ")) #asks how many boxes to open
 how_long_between_boxes = float(input("how long would you like btween boxes, i.e. 1 would be 1 second, can not go below 0.1 ")) #how long between boxes
 which_box = which_box.lower() #turns uppercase to lowwercase
@@ -93,7 +93,7 @@ if which_box == "blizzard":
         for _ in range(how_many):
             character = ["Snow Globe", "Holiday Gift", "Hot Chocolate", "Holiday Wreath", "Gingerbread Man", "Gingerbread House", "Snowman", "Santa Claus", "Frost Wreath", "Troical Globe",]
             character = choice(
-                character, 1, p=[0.185, 0.185, 0.185, 0.185, 0.1015, 0.1015, 0.05, 0.0065, 0.0005,])
+                character, 1, p=[0.1775, 0.1775, 0.1775, 0.1775, 0.1145, 0.1145, 0.0505, 0.01, 0.003, 0.02,])
             print(character)
             sleep(how_long_between_boxes)
 
@@ -120,5 +120,4 @@ if which_box == "lucky":
                 character, 1, p=[1,])
             print(character)
             sleep(how_long_between_boxes)
-
 
